@@ -42,7 +42,7 @@ export default function Home() {
 
     const parsedAmount = parseAmount(amount)
     if (parsedAmount && valid && receiver) {
-      setEpc(`BCD\n002\n1\nSCT\n\n${receiver}}\n${iban}\n${parsedAmount}\n\n\n${description}\n`)
+      setEpc(`BCD\n002\n1\nSCT\n\n${receiver}\n${iban}\n${parsedAmount}\n\n\n${description}\n`)
     } else {
       setEpc(null)
     }
